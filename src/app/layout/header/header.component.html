@@ -1,1 +1,11 @@
-<p>header works!</p>
+<header>
+  <nav>
+    <img src="../../../assets/images/logo.png" alt="Mountain view." />
+    <ul *ngFor="let link of links">
+      <li>
+        <a routerLink="{{ link.source }}">{{ link.title }}</a>
+      </li>
+    </ul>
+  </nav>
+  <h1>{{ title }}</h1>
+</header>
