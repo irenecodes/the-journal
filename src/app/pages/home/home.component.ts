@@ -41,6 +41,30 @@ export class HomeComponent implements OnInit {
     },
   ];
 
+  blogPosts = [
+    {
+      id: 1,
+      source: '../../../assets/images/image3-gg-bridge.jpg',
+      alt: 'Golden Gate Bridge view.',
+      title: 'Golden State',
+      date: 'Feb 26',
+    },
+    {
+      id: 2,
+      source: '../../../assets/images/image4-11-cities.jpg',
+      alt: 'Snow on roofs of buildings in a Venetian city.',
+      title: '11 Cities in 12 Days',
+      date: 'Feb 1',
+    },
+    {
+      id: 3,
+      source: '../../../assets/images/image5-year-in-awe.jpg',
+      alt: 'Lights on the balcony shaded by the roof.',
+      title: 'Year in Awe',
+      date: 'Jan 27',
+    },
+  ];
+
   constructor() {}
 
   ngOnInit(): void {}
