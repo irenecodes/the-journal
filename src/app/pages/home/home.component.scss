@@ -1,3 +1,5 @@
+@import "../../../assets/styles/partials/variables";
+
 .about {
   margin: 90px auto;
 }
@@ -28,4 +30,31 @@
 
 .large-bb {
   width: 49%;
+}
+
+.latest-blog-posts {
+  h2 {
+    margin: 100px auto 50px;
+    text-align: center;
+  }
+  .card {
+    border: none;
+  }
+
+  .card-title {
+    @include heading(2.4rem, $dark);
+    padding: 32px 0 16px;
+  }
+
+  .card-body {
+    background: $light;
+  }
+
+  .card-deck {
+    margin-bottom: 120px;
+  }
+
+  .card-text {
+    margin-bottom: 32px;
+  }
 }

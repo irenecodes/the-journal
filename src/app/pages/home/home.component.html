@@ -33,17 +33,21 @@
     </div>
   </section>
   <app-banner-destinations></app-banner-destinations>
-  <section class="latest-blog-posts">
+  <section class="latest-blog-posts container">
     <h2>Latest</h2>
-    <div class="card">
-      <img class="card-img-top" src="..." alt="Card image cap" />
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="card-deck">
+      <div class="card" *ngFor="let blog of blogPosts">
+        <img
+          class="card-img-top"
+          src="{{ blog.source }}"
+          alt="{{ blog.alt }}"
+        />
+        <div class="card-body">
+          <h4 class="card-title">{{ blog.title }}</h4>
+          <p class="card-text">
+            {{ blog.date }}
+          </p>
+        </div>
       </div>
     </div>
   </section>
