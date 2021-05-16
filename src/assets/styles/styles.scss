@@ -1,29 +1,33 @@
 @import "./partials/setup";
 @import "./partials/variables";
 
-body {
-  font-size: 10px;
+html {
+  font-size: 62.5%;
+}
+
+body,
+p {
+  font-size: 1.8rem;
 }
 
 p {
-  font-size: 1.8rem;
   font-family: "Roboto", sans-serif;
 }
 
 h1 {
-  @include heading(7rem);
+  @include heading(7rem, $light);
 }
 
 h2 {
-  @include heading(5rem);
+  @include heading(5rem, $dark);
 }
 
 h3 {
-  @include heading(3.2rem);
+  @include heading(3.2rem, $dark);
 }
 
 nav {
-  @include heading(2.5rem);
+  @include heading(2.5rem, $light);
 }
 
 button {

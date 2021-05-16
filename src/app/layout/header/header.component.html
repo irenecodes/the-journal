@@ -1,8 +1,10 @@
 <header>
   <nav>
-    <img src="../../../assets/images/logo.png" alt="Mountain view." />
-    <ul *ngFor="let link of links">
-      <li>
+    <a routerLink=""
+      ><img src="../../../assets/images/logo.png" alt="Mountain view."
+    /></a>
+    <ul>
+      <li *ngFor="let link of links">
         <a routerLink="{{ link.source }}">{{ link.title }}</a>
       </li>
     </ul>

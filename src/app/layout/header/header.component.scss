@@ -4,3 +4,17 @@ header {
   background-attachment: fixed;
   background-size: cover;
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  margin-left: 88px;
+}

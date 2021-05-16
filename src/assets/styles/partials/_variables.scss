@@ -19,9 +19,10 @@ $dark: #0c1d24;
 }
 
 // font-size
-@mixin heading($fs) {
+@mixin heading($fs, $col) {
   font-weight: 400;
   font-size: $fs;
+  color: $col;
   font-family: "Vidaloka", serif;
 }
 
