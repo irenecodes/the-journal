@@ -9,7 +9,7 @@ export class FooterComponent implements OnInit {
   links = [
     {
       title: 'About',
-      source: '#about',
+      source: 'home#about',
     },
     {
       title: 'Blog',

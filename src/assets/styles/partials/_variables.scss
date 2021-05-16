@@ -29,4 +29,10 @@ $vida: "Vidaloka", serif;
   display: inline-block;
   font-family: $vida;
   text-transform: uppercase;
+  transition: 0.3s ease all;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    letter-spacing: 1px;
+  }
 }
