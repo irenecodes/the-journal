@@ -10,11 +10,14 @@ $dark: #0c1d24;
 /*** FONT STYLES ***/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Vidaloka&display=swap");
 
+$robo: "Roboto", sans-serif;
+$vida: "Vidaloka", serif;
+
 @mixin heading($fs, $col) {
   font-weight: 400;
   font-size: $fs;
   color: $col;
-  font-family: "Vidaloka", serif;
+  font-family: $vida;
 }
 
 @mixin button($padding) {
@@ -24,6 +27,6 @@ $dark: #0c1d24;
   background: $accent;
   padding: $padding;
   display: inline-block;
-  font-family: "Vidaloka", serif;
+  font-family: $vida;
   text-transform: uppercase;
 }

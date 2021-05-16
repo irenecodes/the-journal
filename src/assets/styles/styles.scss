@@ -13,7 +13,7 @@ p {
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: $robo;
 }
 
 h1 {
@@ -30,6 +30,9 @@ h3 {
 
 nav {
   @include heading(2.5rem, $light);
+  li {
+    list-style: none;
+  }
 }
 
 button,
@@ -39,4 +42,14 @@ button,
 
 img {
   max-width: 100%;
+}
+
+.ptb-20 {
+  padding: 20px 0;
+}
+
+.line-divider {
+  background: $gray;
+  height: 1px;
+  margin: 15px 0;
 }

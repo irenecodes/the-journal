@@ -1,8 +1,6 @@
 <header>
   <nav class="container">
-    <a routerLink=""
-      ><img src="../../../assets/images/logo.png" alt="Mountain view."
-    /></a>
+    <app-logo></app-logo>
     <ul>
       <li *ngFor="let link of links">
         <a routerLink="{{ link.source }}">{{ link.title }}</a>

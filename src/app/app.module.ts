@@ -12,6 +12,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeroComponent } from './components/hero/hero.component';
+import { LogoComponent } from './components/logo/logo.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { HeroComponent } from './components/hero/hero.component';
     ContactComponent,
     PageNotFoundComponent,
     HeroComponent,
+    LogoComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],

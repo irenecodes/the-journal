@@ -1,19 +1,18 @@
 <footer>
-  <div><img src="" alt="" /></div>
   <nav>
+    <app-logo class="ptb-20"></app-logo>
     <ul>
-      <li></li>
+      <li *ngFor="let link of links">
+        <a routerLink="{{ link.source }}">{{ link.title }}</a>
+      </li>
     </ul>
-    <div class="line-divider"></div>
-    <p>Created at Juno College of Technology</p>
-    <p>
-      Written in Angular by
-      <a
-        href="https://irenetruong.tech"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Irene Truong</a
-      >
-    </p>
   </nav>
+  <div class="line-divider"></div>
+  <p>Created at Juno College of Technology</p>
+  <p>
+    Written in Angular by
+    <a href="https://irenetruong.tech" target="_blank" rel="noopener noreferrer"
+      >Irene Truong</a
+    >
+  </p>
 </footer>
