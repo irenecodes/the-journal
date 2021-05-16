@@ -1,5 +1,7 @@
 @import "./partials/setup";
 @import "./partials/variables";
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
 
 html {
   font-size: 62.5%;
@@ -30,6 +32,11 @@ nav {
   @include heading(2.5rem, $light);
 }
 
-button {
-  @include button(30px 90px);
+button,
+.faux-button {
+  @include button(15px 45px);
+}
+
+img {
+  max-width: 100%;
 }

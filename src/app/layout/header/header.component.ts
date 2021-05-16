@@ -21,8 +21,6 @@ export class HeaderComponent implements OnInit {
     },
   ];
 
-  title: string = 'The Journal';
-
   constructor() {}
 
   ngOnInit(): void {}

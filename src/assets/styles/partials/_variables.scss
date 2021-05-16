@@ -10,15 +10,6 @@ $dark: #0c1d24;
 /*** FONT STYLES ***/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Vidaloka&display=swap");
 
-/*** BUTTONS mixin ***/
-
-@mixin wrapper {
-  max-width: 1280px;
-  width: 90%;
-  margin: 0 auto;
-}
-
-// font-size
 @mixin heading($fs, $col) {
   font-weight: 400;
   font-size: $fs;
@@ -33,4 +24,6 @@ $dark: #0c1d24;
   background: $accent;
   padding: $padding;
   display: inline-block;
+  font-family: "Vidaloka", serif;
+  text-transform: uppercase;
 }

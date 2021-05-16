@@ -1,13 +1,19 @@
+@import "../../../assets/styles/partials/variables";
+
 header {
-  background-image: url(../../../assets/images/hero.jpg);
-  height: 100vh;
-  background-attachment: fixed;
-  background-size: cover;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  img {
+    max-width: 45px;
+  }
 }
 
 ul {
@@ -17,4 +23,7 @@ ul {
 li {
   list-style: none;
   margin-left: 88px;
+  a {
+    color: $light;
+  }
 }

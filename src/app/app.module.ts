@@ -10,6 +10,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HeroComponent } from './components/hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +23,9 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     BlogComponent,
     ContactComponent,
     PageNotFoundComponent,
+    HeroComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
 })

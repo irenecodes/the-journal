@@ -1,0 +1,31 @@
+.about {
+  margin: 90px auto;
+}
+
+.gallery {
+  margin: 100px auto;
+  h2 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+.gallery-view {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  div img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+}
+
+.smol {
+  width: 32%;
+  margin-bottom: 20px;
+}
+
+.large-bb {
+  width: 49%;
+}
