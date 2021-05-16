@@ -1,0 +1,31 @@
+@import "./partials/setup";
+@import "./partials/variables";
+
+body {
+  font-size: 10px;
+}
+
+p {
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  @include heading(7rem);
+}
+
+h2 {
+  @include heading(5rem);
+}
+
+h3 {
+  @include heading(3.2rem);
+}
+
+nav {
+  @include heading(2.5rem);
+}
+
+button {
+  @include button(30px 90px);
+}

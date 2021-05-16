@@ -1,0 +1,35 @@
+/*** COLOURS ***/
+$accent: #d45121;
+
+$light: #ebeff1;
+
+$gray: #8d9ba0;
+
+$dark: #0c1d24;
+
+/*** FONT STYLES ***/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Vidaloka&display=swap");
+
+/*** BUTTONS mixin ***/
+
+@mixin wrapper {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+// font-size
+@mixin heading($fs) {
+  font-weight: 400;
+  font-size: $fs;
+  font-family: "Vidaloka", serif;
+}
+
+@mixin button($padding) {
+  font-size: 1.8rem;
+  color: $light;
+  text-align: center;
+  background: $accent;
+  padding: $padding;
+  display: inline-block;
+}
