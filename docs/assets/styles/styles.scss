@@ -1,0 +1,55 @@
+@import "./partials/setup";
+@import "./partials/variables";
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+p {
+  font-size: 1.8rem;
+}
+
+p {
+  font-family: $robo;
+}
+
+h1 {
+  @include heading(7rem, $light);
+}
+
+h2 {
+  @include heading(5rem, $dark);
+}
+
+h3 {
+  @include heading(3.2rem, $dark);
+}
+
+nav {
+  @include heading(2.5rem, $light);
+  li {
+    list-style: none;
+  }
+}
+
+button,
+.faux-button {
+  @include button(15px 45px);
+}
+
+img {
+  max-width: 100%;
+}
+
+.ptb-20 {
+  padding: 20px 0;
+}
+
+.line-divider {
+  background: $gray;
+  height: 1px;
+  margin: 15px 0;
+}
