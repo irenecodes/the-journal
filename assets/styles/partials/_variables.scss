@@ -1,0 +1,38 @@
+/*** COLOURS ***/
+$accent: #d45121;
+
+$light: #ebeff1;
+
+$gray: #b5c1c6; //#8d9ba0;
+
+$dark: #0c1d24;
+
+/*** FONT STYLES ***/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Vidaloka&display=swap");
+
+$robo: "Roboto", sans-serif;
+$vida: "Vidaloka", serif;
+
+@mixin heading($fs, $col) {
+  font-weight: 400;
+  font-size: $fs;
+  color: $col;
+  font-family: $vida;
+}
+
+@mixin button($padding) {
+  font-size: 1.8rem;
+  color: $light;
+  text-align: center;
+  background: $accent;
+  padding: $padding;
+  display: inline-block;
+  font-family: $vida;
+  text-transform: uppercase;
+  transition: 0.3s ease all;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    letter-spacing: 1px;
+  }
+}
